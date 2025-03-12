@@ -1,0 +1,16 @@
+name: This is the first workflow in learning git hub actions
+
+on : [push]
+
+jobs:
+    first-job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: To echo a string
+              run : echo "Hello, World"
+
+            - name: Multi line commands
+              run : |
+                node -v
+                npm -v
